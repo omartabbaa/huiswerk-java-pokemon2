@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.*;
 
 // Los in deze klasse alle foutmeldingen op door (abstracte) klassen met variabelen en methodes te maken en een interface met methodes (en soms een import).
 public class PokemonGymImpl implements PokemonGym {
@@ -150,16 +150,12 @@ public class PokemonGymImpl implements PokemonGym {
         GrassPokemon grass;
         WaterPokemon water;
 
+
         String choosenAttack = attack.toLowerCase(Locale.ROOT);
 
         switch (pokemon.getType()) {
-            case "fire" -> {
-                fire = new FirePokemon(pokemon.getName(), pokemon.getLevel(), pokemon.getHp(), pokemon.getFood(), pokemon.getSound());
-                switch (choosenAttack) {
-                    case "inferno" -> fire.inferno(pokemon, gymPokemon);
-                    case "pyroball" -> fire.pyroBall(pokemon, gymPokemon);
-                    case "firelash" -> fire.fireLash(pokemon, gymPokemon);
-                    default -> fire.flameThrower(pokemon, gymPokemon);
+            case "fire" -> { return Pokemon.hp
+
                 }
             }
             case "water" -> {
@@ -207,6 +203,7 @@ public class PokemonGymImpl implements PokemonGym {
                     case "inferno" -> fire.inferno(gymPokemon, pokemon);
                     case "pyroBall" -> fire.pyroBall(gymPokemon, pokemon);
                     case "fireLash" -> fire.fireLash(gymPokemon, pokemon);
+                    case "solarBeam" -> fire.solarBeam(gymPokemon, pokemon);
                     default -> fire.flameThrower(gymPokemon, pokemon);
                 }
             }
@@ -225,7 +222,7 @@ public class PokemonGymImpl implements PokemonGym {
                 String attack = grass.getAttacks().get(randomAttackByGymOwner());
                 switch (attack) {
                     case "leafStorm" -> grass.leafStorm(gymPokemon, pokemon);
-                    case "solarBeam" -> grass.solarBeam(gymPokemon, pokemon);
+
                     case "leechSeed" -> grass.leechSeed(gymPokemon, pokemon);
                     default -> grass.leaveBlade(gymPokemon, pokemon);
                 }

@@ -4,14 +4,17 @@ import java.util.*;
 // In deze klasse staan de aanval methodes die je kunt gebruiken.
 public class Methodes {
 
-    /*deze methode komt op meerdere plaatsen terug*/
-    List<String> getAttacks() {
+    /*deze methode komt op meerdere plaatsen terug
+    *
+    *
+    *  List<String> getAttacks() {
         return attacks;
-    }
+    }*/
 
 
 
-    /*De volgende 16 methodes zijn aanvallen*/
+
+    /*De volgende 16 methodes zijn aanvallen
     void surf(Pokemon name, Pokemon enemy);
 
     void fireLash(Pokemon name, Pokemon enemy);
@@ -43,6 +46,6 @@ public class Methodes {
     void inferno(Pokemon name, Pokemon enemy);
 
     void voltTackle(Pokemon name, Pokemon enemy);
-
+*/
 
 }
