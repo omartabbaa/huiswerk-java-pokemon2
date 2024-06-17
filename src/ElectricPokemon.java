@@ -7,6 +7,8 @@ public class ElectricPokemon extends Pokemon implements ElectricAttack {
   }
 
 
+
+
   @Override
   public void ThunderPunch(Pokemon attacker, Pokemon enemy) {
     int damage = 0;
